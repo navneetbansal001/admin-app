@@ -1,0 +1,22 @@
+<!--The whole content below can be removed with the new code.-->
+<div class="card" style="width: 105%">
+  <div style="background-color:#3b5998  ; color: white" class="card-header" *ngIf="currentUser">
+       <p style="float: left">On Boarding App</p>
+      <p style="float: left ;margin-left: 790px">Hi {{currentUser.firstName}}!</p>
+    <button class='btn' style='width:80px ; color: white' (click)=logOut()> Logout </button>
+  </div>
+
+  <div style="text-align:center">
+    <div *ngIf="currentUser">
+      <div class="card">
+        <nav class='navbar navbar-expand navbar-light bg-light' style="width: 66%; background-color:darkgray">
+          <a class='navbar-brand'>{{pageTitle}}</a>
+          <ul class='nav nav-pills'>
+            <a ><li [ngClass]="{isActive: isOnBoardRoute}" class='nav-link' [routerLink]="['/onboardingform']"> OnBoarding Form </li></a>
+            <li [ngClass]="{isActive : !isOnBoardRoute}" class='nav-link' [routerLink]="['/studentlist']"> Students List </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

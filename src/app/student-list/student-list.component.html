@@ -1,0 +1,63 @@
+<app-home [isActive]="false"></app-home>
+<div class="card" style="width: 105%">
+  <div class="card-header">
+    <form novalidate (ngSubmit)="save()" [formGroup]="studentListForm">
+      <div class="form-group row mb-2">
+        <div>Filter by Category:</div>
+        <div class="col-md-3">
+          <select class="form-control" id="category" formControlName="category">
+                  <option  selected value="all">All</option>          
+                  <option value="international">International</option>
+                  <option value="local">Local</option>
+                </select>
+        </div>
+
+        <div class="col-md-3" style="margin-left: 400px">
+          <input class="form-control" id="searchByName" type="text" placeholder="Search by name" formControlName="searchByName">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card-body">
+    <div class='table-responsive' *ngIf='students && students.length'>
+      <div class="table">
+        <thead style="width:100%">
+          <tr>
+            <th>Student Name</th>
+            <th>OnBoard Number</th>
+            <th>Category</th>
+            <th>DOB</th>
+            <th>Father Name</th>
+            <th>Mother Name</th>
+            <th>Last Class Score</th>
+            <th colspan="3">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of filteredStudents" [ngClass]="{'international' : student.category==='international'}">
+            <td><a [routerLink]="['/students' , student.id,true,'view']"> {{student.name}} </a></td>
+            <td>{{student.onBoardNumber}}</td>
+            <td>{{student.category}}</td>
+            <td>{{student.dateOfBirth}}</td>
+            <td>{{student.fatherName}}</td>
+            <td>{{student.motherName}}</td>
+            <td>{{student.lastClassScore}}</td>
+            <td>
+              <button class="btn btn-outline-primary btn-sm" [routerLink]="['/students',student.id ,false,'edit']">Edit
+                </button>
+            </td>
+            <td>
+              <button class="btn btn-outline-primary btn-sm" [routerLink]="['/students',student.id,true,'view']">View
+                </button>
+            </td>
+            <td>
+              <button class="btn btn-outline-primary btn-sm" (click)="delete(student)">Delete
+                </button>
+            </td>
+            
+          </tr>
+        </tbody>
+      </div>
+    </div>
+  </div>
+</div>

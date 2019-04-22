@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "firstName": "navneet",
+      "lastName": "bansal",
+      "email": "navi@gmail.com",
+      "phone": "98989898",
+      "age": 25,
+      "password": "12341234",
+      "id": 1
+    },
+    {
+      "firstName": "kjkj",
+      "lastName": "kkljk",
+      "email": "navikhkjh@gmail.com",
+      "phone": "9464893800",
+      "age": 889,
+      "password": "9898989889",
+      "id": 2
+    }
+  ],
+  "students": [
+    {
+      "onBoardNumber": "3145800",
+      "name": "lklhi",
+      "category": "international",
+      "domicile": true,
+      "birthCertificate": true,
+      "markSheets": true,
+      "policeClearance": true,
+      "passport": true,
+      "declaration": true,
+      "dateOfBirth": "2019-04-09",
+      "fatherName": "nkh",
+      "motherName": "ioho",
+      "lastClassScore": 989,
+      "id": 4
+    },
+    {
+      "onBoardNumber": "3145300",
+      "name": "kjhkh",
+      "category": "local",
+      "domicile": true,
+      "birthCertificate": true,
+      "markSheets": true,
+      "policeClearance": true,
+      "passport": true,
+      "declaration": true,
+      "dateOfBirth": "2019-04-08",
+      "fatherName": "lklk",
+      "motherName": "rwkjjfk ekjek dfkjdf",
+      "lastClassScore": 98798,
+      "id": 5
+    },
+    {
+      "onBoardNumber": "31458888",
+      "name": "Navneet Bansal",
+      "category": "international",
+      "domicile": true,
+      "birthCertificate": true,
+      "markSheets": true,
+      "policeClearance": true,
+      "passport": true,
+      "declaration": true,
+      "dateOfBirth": "1993-08-08",
+      "fatherName": "ekjfo",
+      "motherName": "oohoio",
+      "lastClassScore": 9898,
+      "id": 6
+    },
+    {
+      "onBoardNumber": "31459000",
+      "name": "jioi",
+      "category": "local",
+      "domicile": true,
+      "birthCertificate": true,
+      "markSheets": true,
+      "policeClearance": false,
+      "passport": true,
+      "declaration": true,
+      "dateOfBirth": "1997-09-08",
+      "fatherName": "lkhhi",
+      "motherName": "hiug",
+      "lastClassScore": 9798,
+      "id": 7
+    }
+  ]
+}

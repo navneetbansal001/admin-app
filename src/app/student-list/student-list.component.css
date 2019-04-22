@@ -1,0 +1,19 @@
+tr{
+    background-color:#D1D2EB;
+}
+th{
+       color:#D5DDE5;;
+  background:#1b1e24;      
+}
+tr.international {
+    background-color:#d3d3d3;
+}
+div.card-header{
+    background-color : #3b5998;
+    color: white
+    }
+
+tr:hover td {
+  background:#FFFFFF;
+  border-top: 1px solid #22262e;
+}    
